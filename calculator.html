@@ -1,17 +1,32 @@
-<!DOCTYPE html><html><head>
-<title>Calculator</title><meta charset="utf-8">
-<script type="text/javascript">
+<!DOCTYPE html><html>
+    <head>
+        <title>Calculator</title><meta charset="utf-8">
+        <script type="text/javascript">
 
-function inverse() {
-  var num = document.getElementById("n1");
-  num.value = 1/num.value;
-}
-</script>
-</head>
-<body>
-  Number:
-  <input type="text" id="n1"><p>
+            function inverse() {
+                var num = document.getElementById("n1");
+                num.value = 1 / num.value;
+            }
+            function square() {
+                var num = document.getElementById("n1");
+                num.value = num.value * num.value;
+            }
 
-  <button onclick="inverse()"> 1/x </button>
-</body>
+        </script>
+    </head>
+
+    <body>
+        <h1>Carlos Vázquez Jorge</h1>
+        <p>
+            Number:
+            <input type="text" id="n1">
+        </p>
+        <p>
+
+            <button onclick="square()"> x<sup>2</sup> </button>
+            <button onclick="inverse()"> 1/x </button>
+        </p>
+
+    </body>
+
 </html>
